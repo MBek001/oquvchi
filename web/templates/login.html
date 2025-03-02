@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/fonts/circular-std/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/libs/css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/fonts/fontawesome/css/fontawesome-all.css') }}">
+    <style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- login page  -->
+    <!-- ============================================================== -->
+    <div class="splash-container">
+        <div class="card" style="border: 1px solid #6222CC;">
+            <div class="card-header text-center"><a href="{{url_for('index')}}"><img class="logo-img" src="https://files.oaiusercontent.com/file-yGjaAMSHaTfUIt6is5iCjC77?se=2024-03-06T19%3A14%3A44Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D7ea129a7-8771-41ef-8ecd-d6ec2c8b1dee.webp&sig=TfLEwtpkc/7xNesng/A88oTS0Sxyx0DlAhqHgVFc34U%3D" alt="logo" style="width: 200px; height: 200px; border-radius: 50%; border: 1px solid #6222CC;"></a><span class="splash-description" >Please, Authanticate to the website through telegram</span></div>
+
+            <div class="card-body">
+                <form>
+
+                    <!-- Username and Password
+                    <div class="form-group">
+                        <input class="form-control form-control-lg" id="username" type="text" placeholder="Username" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control form-control-lg" id="password" type="password" placeholder="Password">
+                    </div>
+
+                    -->
+
+
+                    <div class="form-group">
+
+                        <!-- Checkbox
+                        <label class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox"><span class="custom-control-label">Remember Me</span>
+                        </label>
+
+                        -->
+
+                    <script async src="https://telegram.org/js/telegram-widget.js?7"
+                    data-telegram-login="HurryTutor_bot"
+                    data-size="large"
+                    data-radius="10"
+                    data-auth-url="/login"
+                    data-request-access="write"></script>
+
+                    </div>
+
+                    <!-- Sign in Button
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" style="background-color: #6222CC !important;">Sign in</button>
+
+                    -->
+
+                </form>
+
+            </div>
+
+
+            <!-- Login card footer
+
+            <div class="card-footer bg-white p-0  ">
+                <div class="card-footer-item card-footer-item-bordered">
+                    <a href="#" class="footer-link">Create An Account</a></div>
+                <div class="card-footer-item card-footer-item-bordered">
+                    <a href="#" class="footer-link">Forgot Password</a>
+                </div>
+            </div>
+
+            -->
+
+
+
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- end login page  -->
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+    <script src="{{ url_for('static', filename='assets/vendor/jquery/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.js') }}"></script>
+</body>
+
+</html>
